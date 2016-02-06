@@ -3,13 +3,13 @@
 ### Intellij ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm
 
-.gradle
-/local.properties
+Confundrum/.gradle
+Confundrum/local.properties
 
 *.iml
 
 ## Directory-based project format:
-.idea/
+Confundrum/.idea/
 # if you remove the above rule, at least ignore the following:
 
 # User-specific stuff:
@@ -39,16 +39,16 @@
 ## Plugin-specific files:
 
 # IntelliJ
-/out/
+Confundrum/out/
 
 # mpeltonen/sbt-idea plugin
-.idea_modules/
+Confundrum/.idea_modules/
 
 # JIRA plugin
-atlassian-ide-plugin.xml
+Confundrum/atlassian-ide-plugin.xml
 
 # Crashlytics plugin (for Android Studio and IntelliJ)
-com_crashlytics_export_strings.xml
-crashlytics.properties
-crashlytics-build.properties
-fabric.properties
+Confundrum/com_crashlytics_export_strings.xml
+Confundrum/crashlytics.properties
+Confundrum/crashlytics-build.properties
+Confundrum/fabric.properties
