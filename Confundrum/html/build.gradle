@@ -7,8 +7,8 @@ gwt {
     minHeapSize="1G"
 
     src = files(file("src/")) // Needs to be in front of "modules" below.
-    modules 'com.corimi.cofundrum.GdxDefinition'
-    devModules 'com.corimi.cofundrum.GdxDefinitionSuperdev'
+    modules 'com.corimi.confundrum.GdxDefinition'
+    devModules 'com.corimi.confundrum.GdxDefinitionSuperdev'
     project.webAppDirName = 'webapp'
 
     compiler {

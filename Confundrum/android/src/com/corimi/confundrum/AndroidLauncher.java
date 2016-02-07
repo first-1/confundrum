@@ -1,10 +1,10 @@
-package com.corimi.cofundrum;
+package com.corimi.confundrum;
 
 import android.os.Bundle;
 
 import com.badlogic.gdx.backends.android.AndroidApplication;
 import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration;
-import com.corimi.cofundrum.Confundrum;
+import com.corimi.confundrum.Confundrum;
 
 public class AndroidLauncher extends AndroidApplication {
 	@Override

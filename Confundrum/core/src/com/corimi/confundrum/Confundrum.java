@@ -1,4 +1,4 @@
-package com.corimi.cofundrum;
+package com.corimi.confundrum;
 
 import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;

@@ -15,7 +15,7 @@ android {
         instrumentTest.setRoot('tests')
     }
     defaultConfig {
-        applicationId "com.corimi.cofundrum"
+        applicationId "com.corimi.confundrum"
         minSdkVersion 8
         targetSdkVersion 23
     }
@@ -68,7 +68,7 @@ task run(type: Exec) {
     }
 
     def adb = path + "/platform-tools/adb"
-    commandLine "$adb", 'shell', 'am', 'start', '-n', 'com.corimi.cofundrum/com.corimi.cofundrum.AndroidLauncher'
+    commandLine "$adb", 'shell', 'am', 'start', '-n', 'com.corimi.confundrum/com.corimi.confundrum.AndroidLauncher'
 }
 
 // sets up the Android Eclipse project, using the old Ant based build.

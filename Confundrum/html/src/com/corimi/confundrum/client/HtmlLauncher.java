@@ -1,9 +1,9 @@
-package com.corimi.cofundrum.client;
+package com.corimi.confundrum.client;
 
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.backends.gwt.GwtApplication;
 import com.badlogic.gdx.backends.gwt.GwtApplicationConfiguration;
-import com.corimi.cofundrum.Confundrum;
+import com.corimi.confundrum.Confundrum;
 
 public class HtmlLauncher extends GwtApplication {
 
