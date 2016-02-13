@@ -1,6 +1,8 @@
 package com.corimi.screens;
 
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
+import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
@@ -14,7 +16,7 @@ public class MyScreen implements Screen{
     Batch batch;
 
     public MyScreen() {
-        camera = new OrthographicCamera();
+        camera = new OrthographicCamera(Global.SCREEN_WIDTH, Global.SCREEN_HEIGHT);
         camera.position.set(Global.SCREEN_WIDTH/2f, Global.SCREEN_HEIGHT/2f, 0);
         camera.update();
         batch = new SpriteBatch();

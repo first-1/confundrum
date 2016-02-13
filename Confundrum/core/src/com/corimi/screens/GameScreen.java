@@ -11,21 +11,16 @@ import com.corimi.utils.Global;
  */
 public class GameScreen extends MyScreen{
 
-    Texture pls;
-
     public GameScreen() {
         super();
-        pls = new Texture(Gdx.files.internal("badlogic.jpg"));
     }
 
     @Override
     public void render(float delta) {
-        Gdx.gl.glClearColor( 1, 1, 1, 1 );
-        Gdx.gl.glClear( GL20.GL_COLOR_BUFFER_BIT | GL20.GL_DEPTH_BUFFER_BIT );
-        batch.begin();
-        batch.draw(pls, 0, 0, 6, 6);
-        batch.end();
-        //Global.drawSquircle(super.batch, Color.BROWN, 1, 1, 6, 3, 1);
+        Gdx.gl.glClearColor( 0, 1, 1, 1 );
+        Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+        Global.drawSquircle(super.batch, Color.BROWN, 5, 5, 6, 3, 1);
+        Global.drawSquircle(super.batch, Color.);
     }
 
     @Override
