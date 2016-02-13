@@ -40,4 +40,31 @@ public class Global {
         shapeRenderer.end();
     }
 
+    /// 0 <= hue < 360, 0 <= saturation, brightness <= 1
+    public static Color getColorFromHSB(int hue, float saturation, float brightness) {
+        float c = saturation * brightness;
+        float x = c * (1 - Math.abs(hue/60 % 2 - 1));
+        float m = brightness - c;
+        float rr, gg, bb;
+        rr = gg = bb = 0;
+        if (0 <= hue && hue < 60){
+            rr = c; gg = x; bb = 0;
+        } else if (60 <= hue && hue < 120){
+            rr = x; gg = c; bb = 0;
+        } else if (120 <= hue && hue < 180){
+            rr = 0; gg = c; bb = x;
+        } else if (180 <= hue && hue < 240){
+            rr = 0; gg = x; bb = c;
+        } else if (240 <= hue && hue < 300){
+            rr = x; gg = 0; bb = c;
+        } else if (300 <= hue && hue < 360){
+            rr = c; gg = 0; bb = x;
+        }
+        float r = rr + m;
+        float g = gg + m;
+        float b = bb + m;
+
+        return new Color(r, g, b, 1);
+    }
+
 }
